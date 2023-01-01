@@ -1,0 +1,161 @@
+
+/* main header container css start */
+.nav_main_container {
+    border-bottom: 2px solid black;
+    height: 5.5rem;
+    margin-bottom: 2rem;
+}
+
+.Header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* links menu container css start */
+.menu_container ul{
+    display: flex;
+    /* border: 2px solid greenyellow; */
+    height: 5.5rem;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* menu ke ander ke links ki design */
+.menu_container ul a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    background-image:
+    linear-gradient(black, black);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transition: background-size 300ms ease;
+    padding-bottom: 0.3rem;
+}
+
+.menu_container ul a:hover{
+    padding-bottom: 0.3rem;
+    background-size: 100% 2px;
+    background-position: left bottom;
+
+}
+
+/* header contaienr buttons css start */
+.button_container{
+    display: flex;
+    /* border: 2px solid green; */
+    height: 5.5rem;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* header container button design start */
+.button{
+    border: 0.14rem solid gray;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    background: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+}
+
+/* menu container is none is desktop screen */
+.manu_button_container{
+    display: none;
+}
+
+/* tablet media queris start for the tablet screen */
+@media screen and (max-width: 992px) {
+    .nav_main_container{
+        /* border: 2px solid green; */
+        /* background-color: red; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: none;
+    }
+    .Header_container{
+        display: none;
+    }
+
+    .mobile_size {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid greenyellow; */
+        background-color: white;
+        min-width: 100%;
+        height: 25rem;
+        top: 15rem;
+        position: relative;
+        z-index: 99;
+        left: 3.1rem;
+        /* height: 50rem */
+        padding: 0rem 0rem;
+        
+    }
+
+    .menu_container ul{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid greenyellow; */
+        height: fit-content;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .button_container{
+        display: flex;
+        /* flex-direction: column; */
+        /* border: 2px solid green; */
+        justify-content: center;
+        /* height: 23rem; */
+    }
+    
+
+    /* menu buttons css start */
+    .manu_button_container{
+        display: block;
+        /* background-color: black; */
+    }
+
+    .menu_button{
+        width: 3.2rem;
+        /* border: 2px solid greenyellow; */
+        cursor: pointer;
+    }
+
+    .menu_container ul a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: black;
+        background-image:
+        linear-gradient(black, black);
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: background-size 300ms ease;
+        padding-bottom: 0.3rem;
+    }
+
+    .menu_container ul a:hover{
+        /* border-bottom: 1px solid black; */
+        /* transition: left 300ms ease; */
+        padding-bottom: 0.3rem;
+        background-size: 100% 2px;
+    }
+}
+

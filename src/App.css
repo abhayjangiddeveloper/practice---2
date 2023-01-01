@@ -1,0 +1,25 @@
+.Shoping__box{
+    /* border: 2px solid gray; */
+    padding: 0rem 2rem;
+}
+
+@media screen and (max-width: 992px) {
+
+    .Shoping__box{
+        /* border: 2px solid gray; */
+        padding: 0rem 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* html{
+        font-size: 100%;
+    } */
+
+    .Shoping__box{
+        padding: 0rem 0rem;
+        /* border: 5px solid green; */
+    }
+
+}
